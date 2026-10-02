@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="with=device-width, initial-scale=1.0">
-        <title>Matteo Atzeni's Portfolio</title>
+        <title>Matteo Atzeni's Portfolio | Projects</title>
         <meta name="description" content="Welcome to Matteo Atzeni's personal website. CS Master student, beginner graphic designer 
         and curious about exploring the World.">
         <link rel="stylesheet" href="style.css">
@@ -23,27 +23,53 @@
         </ul>
         </nav>
 
+         <section id="about" class="about-section">
+            <p>The following projects represent my personal experience in Applied Artificial Intelligence, reflecting how I explore 
+                and connect different domains through technology.
+            </p>
+        </section>
+
         <section id="projects" class="projects-section">
             <h2>Main Projects</h2>
 
             <article class="project">
                 <h3>Multimodal Fake News Detection Framework - Bachelor Thesis</h3>
-                <p>Multimodal framework for detecting fake news built by trying to use different VLMs and validating it choosing
-                    across various datasets related to the specific task. Supervised by Andrea Loddo and Davide Antonio Mura.
-                </p>
+                <ul>
+                    <li><b>Goal</b>: Build a multimodal system for fake news detection</li>
+                    <li><b>Tech</b>: ALIGN, AltCLIP, BLIP, CLIP and Chinese CLIP</li>
+                    <li><b>Method</b>: Comparison of multiple VLMs across different multimodal datasets, followed by a final benchmark against
+                        the THEMIS model</li>
+                    <li><b>Outcome</b>: BLIP achieved the best VLM performance (F1-Score: 0.74) on the DGM4 dataset, while THEMIS remained 
+                        superior across all datasets</li>
+                    <li><b>Role</b>: Full pipeline design and model evaluation</li>
+                    <li><b>Supervised by Andrea Loddo and Davide Antonio Mura</b></li>
+                </ul>
                 <i>Repository available upon request</i>
             </article>
 
+
             <article class="project">
                 <h3>HermeSys - Cloud-Edge-IoT Open-Source Hackathon</h3>
-                <p>Edge-to-Cloud pipeline designed for transferring energetic data among different services, using OpenSlice as 
-                    orchestrator.</p>
+                  <ul>
+                    <li><b>Goal</b>: Create a high-performance Edge-to-Cloud pipeline for secure and fast energy data transfer</li>
+                    <li><b>Tech</b>: OpenSlice, Kubernetes, Docker, MQTT, Telegraf and Kafka</li>
+                    <li><b>Method</b>: Orchestration of multiple containerized microservices through an edge-cloud workflow</li>
+                    <li><b>Outcome</b>: Fault-tolerant, crash-resilient prototype capable of high-throughput distributed data management</li>
+                    <li><b>Role</b>: Pipeline design, integration of cloud-edge components and microservice orchestration</li>
+                    <li><b>Co-author: Marco Concas </b></li>
+                </ul>
                 <a href="https://github.com/theMarck/HermeSys" target="_blank">GitHub Repository</a>
             </article>
 
             <article class="project">
                 <h3>Linguistic Code Switching and Sentiment Analysis of TUIDE - Personal Project</h3>
-                <p>Analysis of the first mini-album of novel K-Pop group TUIDE for exploring its multilinguism and sentiment features.</p>
+                <ul>
+                    <li><b>Goal</b>: Analyse multilingual patterns and sentiment in TUIDE's debut mini-album</li>
+                    <li><b>Tech</b>: lingua-py, XLM-RoBERTa sentiment model</li>
+                    <li><b>Method</b>: Line-by-line language detection and sentiment scoring across five tracks</li>
+                    <li><b>Outcome</b>: English dominates all songs; sentiment mostly neutral; Flip-Flop Girl most positive song</li>
+                    <li><b>Role:</b> Full analysis pipeline and interpretation</li>
+                </ul>
                 <a href="https://github.com/matteee23/TUIDE_Linguistic_Code_Switching_and_Sentiment_Analysis" target="_blank">
                     GitHub Repository</a>
             </article>
